@@ -1,0 +1,7 @@
+{
+  "name": "songdecoder",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

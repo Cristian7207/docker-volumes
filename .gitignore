@@ -17,4 +17,6 @@ metadata.db
 portainer_portainer_data
 rancher-agent-state
 rancher-cni
-
+songdecoder_src/_data/bin
+songdecoder_src/_data/games
+songdecoder_src/_data/include
