@@ -17,4 +17,14 @@
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
+
+  <ion-label>
+    <ion-text>
+      <h1>{{status}}</h1>
+    </ion-text>
+  </ion-label>
+  <ion-button (click)="RecordAudio()">Record</ion-button>
+  <ion-button (click)="StopRecording()">Stop</ion-button>
+  <ion-button (click)="Play()">Play</ion-button>
+  <ion-button (click)="Pause()">Pause</ion-button>
 </ion-content>

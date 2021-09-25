@@ -1,0 +1,30 @@
+# Execute on host machine. check that the new value was applied por default 8192 max 524288
+echo fs.inotify.max_user_watches=20000 | sudo tee -a /etc/sysctl.conf
+sudo sysctl -p
+cat /proc/sys/fs/inotify/max_user_watches
+
+ionic serve --external
+
+# Media
+npm install cordova-plugin-media
+npm install @ionic-native/media
+ionic cap sync
+
+# Dependencias
+npm i @ionic-native/core
+
+# File
+npm install cordova-plugin-file
+npm install @ionic-native/file
+ionic cap sync
+
+# Capacitor para Browser
+npm i serve
+npm install @capacitor/android
+npx cap add android
+
+npm run build
+npx cap copy
+npx cap open android
+
+npm install @ionic/pwa-elements
